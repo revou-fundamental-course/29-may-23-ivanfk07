@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+p {
+    margin: 1em;
+}
+
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:link:active,
+a:visited:active {
+    color: black;
+}
+
+.header-wrapper {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+.header-wrapper > .logo {
+    width: auto;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.header-wrapper > .nav-bar {
+    display: flex;
+}
+
+.nav-item {
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+    border-radius: ;
+}
+
+.nav-item:hover {
+    background-color: rgb(181, 173, 173);
+}
+
+.nav-item:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.nav-item:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.hero {
+    margin-top: 3px;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.hero-wrapper {
+    margin: 2em;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/img/company-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.welcome-speech {
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 4em;
+    margin-top: 2em;
+    color: snow;
+    font-size: 20px;
+}
+
+.join-speech {
+    font-family: 'Times New Roman', Times, serif;
+    color: snow;
+    margin-left: 5em;
+}
+
+#join-speech-1 {
+}
+
+#join-speech-2 {
+    background-color: black;
+    width: 300px;
+}
+
+#join-speech-3 {
+    background-color: black;
+    width: 250px;
+}
+
+#join-speech-4 {
+    background-color: black;
+    width: 280px;
+}
+
+.introduction {
+    margin: 3.5em;
+    margin-top: 0;
+    color: snow;
+}
+
+#hq {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.headquarter-section {
+    background-color: beige;
+    border-radius: 10px;
+}
+
+#hq {
+    margin-left: 1em;
+}
+
+.wrapper-headquarters {
+    display: flex;
+}
+
+.headquarter-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em;
+}
+
+.headquarter-jakarta {
+    background-image: url(/img/jakarta-headquarter.jpg);
+    background-size: contain;
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.headquarter-jakarta:hover {
+    margin-top: -3px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.headquarter-bandung {
+    background-image: url(/img/bandung-headquarter.jpeg);
+    background-size: contain;
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.headquarter-bandung:hover {
+    margin-top: -3px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.headquarter-surabaya {
+    background-image: url(/img/surabaya-headquarter.jpeg);
+    background-size: contain;
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.headquarter-surabaya:hover {
+    margin-top: -3px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.message-us {
+}
+
+.form-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form {
+    border-radius: 10px;
+    background-color: beige;
+    padding: 16px 24px;
+}
+
+#submit {
+    width: 280px;
+}
+
+.form-output {
+    background-color: beige;
+    border-radius: 10px;
+    margin-right: 20em;
+    width: 500px;
+    padding: 16px 24px;
+}
+
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    /* Header */
+    .header-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 5px;
+    }
+
+    .nav-bar {
+        margin-bottom: 1em;
+    }
+
+    /* Hero Section */
+    .hero-wrapper {
+        margin: 1em;
+    }
+
+    .welcome-speech,
+    .join-speech {
+        margin-left: 1em;
+    }
+
+    /* Headquarters Section */
+    .wrapper-headquarters {
+        flex-direction: column;
+    }
+
+    .headquarter-image-container {
+        margin-bottom: 1em;
+    }
+
+    /* Message Us Section */
+    .form-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-output {
+        margin-top: 5px;
+        width: 280px;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    table {
+        margin: 0;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+}
